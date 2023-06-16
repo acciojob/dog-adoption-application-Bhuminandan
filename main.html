@@ -1,57 +1,50 @@
+
 <!DOCTYPE html>
-    <html >
-        <div class="container">
-    <title>Signup Form Car</title>
-    <head>
-    
-        <h1 id="H1">Signup Form Car</h1>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <form action="/submit-form.php" method="post">
-    
-            <div>
-                <label for="name">Name *</label>
-                <br>
-                <input type="text" id="name" placeholder="Name" required>
-                <br>
-            </div>
-            <div>
-                <label for="phone">Phone Number *</label>
-                <br>
-                <input type="text" id="phone" placeholder="Phone Number" required>
-                <br>
-            </div>
-            <div>
-                <label for="address">Address *</label>
-                <br>
-                <input type="text" id="address" placeholder="Address" required>
-                <br>
-            </div>
-            <div>    
-                <label for="checkbox">Have you ever lived with a Dog before? *</label> 
-                <input type="checkbox" id="checkbox" value="Have you ever lived with a Dog before?">
-                <br>
-            </div>
-            
-            <div>
-                <label for="multiSelect">Choose a car: </label>
-                <select id="multiSelect" name="multiSelect"  multiple required>
-                <option value="Pug">Pug</option>
-                <option value="Indian">Indian</option>
-                <option value="Husky">Husky</option>
-                <option value="Pomelion">Pomelion</option>
-                </select>
-        </div>
-            <div>
-                <button type="submit" id="submit" value="Submit">Submit</button>
-                <br>
-            </div>
-    
-        </form>
-        <script type="text/javascript" src="./script.js">
-    </script>
-    
-    </body>
-</div>
-    </html>
+
+<html>
+
+<head>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<!-- the entire body must be written by student -->
+	<main>
+		<h1>Dog Adoption Application</h1>
+		<form method="post">
+			<section>
+				<label for="name">Name</label>
+				 <input type="text" name="name" id="name" placeholder="Name" required>
+			</section>
+			<section>
+				<label for="phone">Phone Number</label>
+				 <input type="text" name="name" id="phone" placeholder="Phone Number" required>
+			</section>
+			<section>
+				<label for="address">Address</label>
+				 <input type="text" name="address" id="address" placeholder="Address" required>
+			</section>
+			<section>
+				<input type="checkbox" name="checkbox" id="checkbox" value="Have you ever lived with a Dog before?" required>
+				<label for="checkbox">Have you ever lived with a Dog before?</label>
+			</section>
+			<section>
+				<label for="multiSelect">Please select your preferred breeds</label>
+			  <select id="multiSelect" required>
+				  <option value="Bulldog">Bulldog</option>
+				  <option value="German Shepherd">German Shepherd</option>
+				  <option vlaue="Golden Retrieve">Golden Retrieve</option>
+			  </select>
+			</section>
+
+			<section>
+				<input type="submit" id="submit" value="Submit">
+			</section>
+		</form>
+	</main>
+    <script type="text/javascript" src="./script.js">
+</script>
+
+</body>
+
+</html>

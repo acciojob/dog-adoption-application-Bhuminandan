@@ -1,16 +1,56 @@
 <!DOCTYPE html>
-
-<html>
-
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
-</body>
-
-</html>
+    <html >
+        <div class="container">
+    <title>Signup Form Car</title>
+    <head>
+    
+        <h1 id="H1">Signup Form Car</h1>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <form action="/submit-form.php" method="post">
+    
+            <div>
+                <label for="name">Name *</label>
+                <br>
+                <input type="text" id="name" value="name" placeholder="Name" required>
+                <br>
+            </div>
+            <div>
+                <label for="phone">Phone Number *</label>
+                <br>
+                <input type="text" id="phone" placeholder="Phone Number" required>
+                <br>
+            </div>
+            <div>
+                <label for="address">Address *</label>
+                <br>
+                <input type="text" id="address" placeholder="Address" required>
+                <br>
+            </div>
+            <div>    
+                <label for="checkbox">Have you ever lived with a Dog before? *</label> 
+                <input type="checkbox" id="checkbox" value="Have you ever lived with a Dog before?">
+                <br>
+            </div>
+            
+            <div id="sectiondiv">
+                <label for="multiSelect">Choose a car: </label>
+                <select id="multiSelect" name="multiSelect" required>
+                <option value="Pug">Pug</option>
+                <option value="Indian">Indian</option>
+                <option value="Husky">Husky</option>
+                </select>
+        </div>
+            <div>
+                <button 10px; type="submit" id="submit" value="Submit">Submit</button>
+                <br>
+            </div>
+    
+        </form>
+        <script type="text/javascript" src="./script.js">
+    </script>
+    
+    </body>
+</div>
+    </html>
